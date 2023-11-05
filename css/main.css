@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Creepster&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fredericka+the+Great&display=swap');
+
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: #000;
+    margin: 0;
+    overflow: hidden;
+    height: 100vh;
+}
+
+#particles-js {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
+
+#birthday-info {
+    position: relative;
+    z-index: 2;
+    background-color: rgba(255, 255, 255, 0.2);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(10px);
+}
+
+h1, p {
+    color: #fff;
+    font-family: 'Creepster', cursive;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 36px;
+    line-height: 1.2;
+}
+
+#birthday-status {
+    color: #ff8800; /* Adjust the color for differentiation */
+    font-family: 'Fredericka the Great', cursive; /* Use a different font for "birthday-status" */
+    font-weight: 700;
+    font-style: normal;
+    font-size: 40px; /* Increase the font size for a distinct appearance */
+    line-height: 1.2;
+}
+
+#age {
+    margin-top: 20px;
+}
+
+#age-value {
+    font-weight: bold;
+    color: #fff;
+}
+
+/* Increase the glow effect of the particles even more */
+#particles-js canvas {
+    animation: glowing 2s ease-in-out infinite alternate;
+}
+
+@keyframes glowing {
+    0% {
+        box-shadow: 0 0 25px rgba(255, 255, 255, 1);
+    }
+    100% {
+        box-shadow: 0 0 35px rgba(255, 255, 255, 1);
+    }
+}
+
+#floating-badge {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #ff8800;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 25px;
+    font-weight: bold;
+    font-size: 18px;
+    font-family: 'Pacifico', cursive; /* Decorative and fancy font */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transform: rotate(-15deg); /* Add a slight rotation for a fancy look */
+    z-index: 2; /* Set a higher z-index to ensure it's above other elements */
+}
+
+/* Additional styles for hover effect */
+#floating-badge:hover {
+    background-color: #ff5500; /* Change color on hover */
+    transform: rotate(-15deg) scale(1.1); /* Add a scaling effect on hover */
+}
