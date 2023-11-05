@@ -27,5 +27,5 @@ document.addEventListener("DOMContentLoaded", function () {
     ageValueElement.textContent = age.toString();
 
     // Load particles.js
-    particlesJS.load("particles-js", "particles-config.json");
+    particlesJS.load("particles-js", "data/particles-config.json");
 });
