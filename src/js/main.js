@@ -21,10 +21,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
     // Display the results on the webpage
     const birthdayStatusElement = document.getElementById("birthday-status");
-    birthdayStatusElement.textContent = isBirthday ? "Happy Birthday!" : "It's not my birthday.";
-
-    const ageValueElement = document.getElementById("age-value");
-    ageValueElement.textContent = age.toString();
+    birthdayStatusElement.textContent = isBirthday ? `It is my ${age}th birthday!` : "It is not my birthday.";
 
     // Load particles.js
     particlesJS.load("particles-js", "data/particles-config.json");
